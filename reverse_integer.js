@@ -2,4 +2,8 @@ var reverse = function(x) {
 
 };
 
-console.log(reverse([1, 2, 1]))
+console.log(reverse(123));// 312
+console.log(reverse(-123));// -312
+console.log(reverse(120));// 21
+console.log(reverse(0));// 0
+
