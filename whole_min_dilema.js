@@ -34,14 +34,14 @@ function playlist(songs) {
     // Write your code here
     // [10, 50, 90, 30]
     songs = songs.map(time => time % 60) // [10, 50, 30, 30]
-    const counter = {} // {10: 1, 50: 1, 30:1]
-    let pairs = 0
+    const counter = {}; // {10: 1, 50: 1, 30:1]
+    let pairs = 0;
     songs.forEach(song => {
-        const diff = (60 - song) % 60
-        if (counter[diff]) pairs += counter[diff]
-        if (!counter[song]) counter[song] = 0
-        counter[song]++
-    })
-    return pairs
+        const diff = (60 - song) % 60;
+        if (counter[diff]) pairs += counter[diff];
+        if (!counter[song]) counter[song] = 0;
+        counter[song]++;
+    });
+    return pairs;
 
 }
