@@ -1,5 +1,9 @@
 var reverseString = function(s) {
-    s.reverse();
+
+    for (let i = 0; i < s.length; i++) {
+
+        s.reverse();
+    }
 };
 
 console.log(reverseString(['h', 'e', 'l', 'l', 'o'])); // ['o', 'l', 'l', 'e', 'h']
